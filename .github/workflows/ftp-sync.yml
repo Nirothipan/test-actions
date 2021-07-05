@@ -1,0 +1,10 @@
+on: push
+name: Deploy on push
+jobs:
+  web-deploy:
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: 82.145.58.242
+        username: test_myhobby
+        password: ${{ secrets.ftp_password }}
