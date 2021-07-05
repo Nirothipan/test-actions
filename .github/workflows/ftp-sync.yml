@@ -11,4 +11,4 @@ jobs:
         server: 82.145.58.242
         username: test_myhobby
         password: ${{ secrets.ftp_password }}
-        server-dir: ./sites/all/test-P
+        server-dir: ./sites/all/test-p/
