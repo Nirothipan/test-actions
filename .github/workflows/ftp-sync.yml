@@ -7,11 +7,11 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-      
+
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
         server: 82.145.58.242
         username: test_myhobby
         password: ${{ secrets.ftp_password }}
-        server-dir: ./sites/all/test-p/
+        server-dir: ./sites/all/
